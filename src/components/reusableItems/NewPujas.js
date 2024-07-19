@@ -1,32 +1,28 @@
 import {GiByzantinTemple} from 'react-icons/gi'
 import {FcCalendar} from 'react-icons/fc'
-import {FaArrowRightLong} from 'react-icons/fa6'
+import {Link} from 'react-router-dom'
+import PujaButton from './PujaButton'
 import './index.css'
 
 const NewPujas = props => {
   const {godImage, sepcialEvent, eventName, templeDetails, timeDetails} = props
-  const onclickParticiapte = () => {}
+
   return (
-    <div className='newpujas-container'>
-      <img src={godImage} alt='godImg' />
-      <p className='specail-event'>{sepcialEvent}</p>
-      <h1>{eventName}</h1>
-      <div className='description-container'>
-        <GiByzantinTemple />
+    <div className="newpujas-container">
+      <img className="god-image" src={godImage} alt="godImg" />
+      <p className="specail-event">{sepcialEvent}</p>
+      <h1 className="event-heading">{eventName}</h1>
+      <div className="description-container">
+        <GiByzantinTemple className="icon" />
         <p>{templeDetails}</p>
       </div>
-      <div className='description-container'>
-        <FcCalendar />
+      <div className="description-container">
+        <FcCalendar className="icon" />
         <p>{timeDetails}</p>
       </div>
-      <button
-        className='participate-btn'
-        type='button'
-        onClick={onclickParticiapte}
-      >
-        PARTICIPATE
-        <span>{FaArrowRightLong}</span>
-      </button>
+      <Link className="link" to="/pujapackage">
+        <PujaButton buttonName={'PARTICIPATE'} />
+      </Link>
     </div>
   )
 }
