@@ -1,0 +1,20 @@
+.explore-img-container {
+  width: 100px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.paragraph {
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.explore-img {
+  width: 80px;
+  height: 80px;
+}
