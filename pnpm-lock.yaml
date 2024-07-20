@@ -8,6 +8,7 @@ dependencies:
   react-icons: 5.2.1_react@18.3.1
   react-router-dom: 6.25.1_react-dom@18.3.1+react@18.3.1
   react-scripts: 5.0.1_react@18.3.1
+  reactjs-popup: 2.0.6_react-dom@18.3.1+react@18.3.1
   web-vitals: 2.1.4
 lockfileVersion: 5.2
 packages:
@@ -9521,6 +9522,18 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
+  /reactjs-popup/2.0.6_react-dom@18.3.1+react@18.3.1:
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1_react@18.3.1
+    dev: false
+    engines:
+      node: '>=10'
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    resolution:
+      integrity: sha512-A+tt+x9wdgZiZjv0e2WzYLD3IfFwJALaRaqwrCSXGjo0iQdsry/EtBEbQXRSmQs7cHmOi5eytCiSlOm8k4C+dg==
   /read-cache/1.0.0:
     dependencies:
       pify: 2.3.0
@@ -11620,4 +11633,5 @@ specifiers:
   react-icons: ^5.2.1
   react-router-dom: ^6.25.1
   react-scripts: 5.0.1
+  reactjs-popup: ^2.0.6
   web-vitals: ^2.1.4

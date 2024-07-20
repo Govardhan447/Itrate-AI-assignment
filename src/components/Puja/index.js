@@ -10,7 +10,7 @@ const Puja = () => {
         Perform your Puja as per Vedic rituals at Famous Hindu Temples in India
         with Sri Mandir
       </h1>
-      <div className="select-puja-container">
+      <div className="choose-puja-container">
         <NewPujas
           godImage={
             'https://res.cloudinary.com/ds1piowcn/image/upload/v1721394089/Screenshot_2024-07-19_174428_lx5ywh.png'

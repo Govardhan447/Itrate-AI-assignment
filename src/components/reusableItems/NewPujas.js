@@ -2,6 +2,7 @@ import {GiByzantinTemple} from 'react-icons/gi'
 import {FcCalendar} from 'react-icons/fc'
 import {Link} from 'react-router-dom'
 import PujaButton from './PujaButton'
+
 import './index.css'
 
 const NewPujas = props => {
@@ -20,8 +21,8 @@ const NewPujas = props => {
         <FcCalendar className="icon" />
         <p>{timeDetails}</p>
       </div>
-      <Link className="link" to="/pujapackage">
-        <PujaButton buttonName={'PARTICIPATE'} />
+      <Link className="link-container" to="/pujapackage">
+        <PujaButton className="button" buttonName={'PARTICIPATE'} />
       </Link>
     </div>
   )
