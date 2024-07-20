@@ -1,11 +1,11 @@
 .explore-img-container {
-  width: 100px;
+  width: 120px;
   height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .paragraph {
@@ -98,7 +98,7 @@
 }
 
 .select-puja-prize-container {
-  width: 12%;
+  width: 15%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,6 +112,10 @@
 .link-container {
   width: 100%;
   text-decoration: none;
+  border: none;
+  outline: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .popup-container {
@@ -122,9 +126,22 @@
   width: 100%;
 }
 
+.nine-one{
+  background-color:transparent;
+  color: #4c4d4c;
+  font-size: 18px;
+  margin-left: 7px;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
+}
+
 .trigger-button {
   border: none;
   outline: none;
+  padding: 0px;
+  margin: 0px;
   width: 100%;
 }
 
@@ -156,11 +173,16 @@
 }
 
 .input {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  height: auto;
+  height: 100%;
   border: none;
   outline: none;
   font-size: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
 }
 .popup-heading {
   font-size: 15px;
@@ -180,9 +202,13 @@
   align-items: center;
 }
 .icon-app {
-  background-color: #efe9e9;
+  background-color:transparent;
   color: #1cca39;
-  font-size: 18px;
+  font-size: 22px;
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+  align-items: center;
 }
 
 .next-btn {
@@ -198,4 +224,12 @@
   font-weight: 500;
   margin-top: 15px;
   border-radius: 7px;
+}
+.two-lines-container{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }

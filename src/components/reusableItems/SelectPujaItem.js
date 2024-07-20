@@ -34,7 +34,8 @@ const SelectPujaItem = props => {
             </p>
             <div className="input-container">
               <IoLogoWhatsapp className="icon-app" />
-              <input className="input" type="text" placeholder="+91" />
+              <p className="nine-one">+91</p>
+              <input className="input" type="text" placeholder="Your Mobile Number" />
             </div>
             <h1 className="popup-heading">Enter Your Name</h1>
             <div className="input-container">

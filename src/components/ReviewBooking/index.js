@@ -33,7 +33,7 @@ const ReviewBooking = () => {
             <p className="family">Total Amount</p>
             <p className="total-rupees">Rs.2001 /-</p>
           </div>
-          <Link to="/Booking" className="continue-btn">
+          <Link to="/booking" className="continue-btn">
             <div>
               <p className="rupees">Rs.2001 /-</p>
               <p className="family-btn">Family + Bhog</p>
