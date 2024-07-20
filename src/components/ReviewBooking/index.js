@@ -8,7 +8,7 @@ const ReviewBooking = () => {
   return (
     <div className="review-booking-bg-container">
       <div className="navigate-bar">
-        <FaArrowLeftLong />
+        <FaArrowLeftLong className='left-arrow'/>
         <h1 className="navigate-heading">Review Booking</h1>
       </div>
       <div className="amount-details-other-details-container">

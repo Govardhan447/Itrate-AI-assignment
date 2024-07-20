@@ -209,6 +209,8 @@
   height: 100%;
   flex-direction: row;
   align-items: center;
+  margin-right: 10px;
+
 }
 
 .next-btn {
@@ -232,4 +234,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  font-size: 10px;
+  line-height: 0;
+}
+.heading-two{
+  font-size: 15px;
 }
