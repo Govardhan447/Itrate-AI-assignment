@@ -1,15 +1,15 @@
-import {FaArrowLeftLong} from 'react-icons/fa6'
-import {IoLogoWhatsapp} from 'react-icons/io'
-import {Link} from 'react-router-dom'
-import Popup from 'reactjs-popup'
-import './index.css'
-import PujaButton from './PujaButton'
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { Link } from "react-router-dom";
+import Popup from "reactjs-popup";
+import "./index.css";
+import PujaButton from "./PujaButton";
 
-const SelectPujaItem = props => {
-  const {pujaType} = props
-  const onsubmitForm = event => {
-    event.preventDefault()
-  }
+const SelectPujaItem = (props) => {
+  const { pujaType } = props;
+  const onsubmitForm = (event) => {
+    event.preventDefault();
+  };
 
   return (
     <div className="select-puja-prize-container">
@@ -19,14 +19,17 @@ const SelectPujaItem = props => {
           modal
           trigger={
             <button className="trigger-button" type="button">
-              <PujaButton buttonName={'PARTICIPATE'} />
+              <PujaButton buttonName={"PARTICIPATE"} />
             </button>
           }
         >
           <form className="trigger-popup-container" onSubmit={onsubmitForm}>
-            <p className="popup-paragraph-line">
-              <FaArrowLeftLong /> fill your Details for Puja
-            </p>
+            <div className="popup-paragraph-line">
+              <Link to="/puja" className="link">
+                <FaArrowLeftLong />
+              </Link>
+              <p>fill your Details for Puja</p>
+            </div>
             <h1 className="popup-heading">Enter Your whatsapp Mobile number</h1>
             <p className="popup-paragraph">
               Your Puja booking updates like Puja Photos, Videos and other
@@ -34,8 +37,13 @@ const SelectPujaItem = props => {
             </p>
             <div className="input-container">
               <IoLogoWhatsapp className="icon-app" />
+
               <p className="nine-one">+91</p>
-              <input className="input" type="text" placeholder="Your Mobile Number" />
+              <input
+                className="input"
+                type="text"
+                placeholder="Your Mobile Number"
+              />
             </div>
             <h1 className="popup-heading">Enter Your Name</h1>
             <div className="input-container">
@@ -54,7 +62,7 @@ const SelectPujaItem = props => {
         </Popup>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SelectPujaItem
+export default SelectPujaItem;
