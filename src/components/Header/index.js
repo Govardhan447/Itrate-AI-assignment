@@ -1,15 +1,56 @@
-import {useState} from 'react'
+import { useState } from "react";
 
-import './index.css'
-import {Link} from 'react-router-dom'
-import {CgProfile} from 'react-icons/cg'
+import "./index.css";
+import { PathLink } from "./styledComponents";
+import { CgProfile } from "react-icons/cg";
+
+const headerElements = [
+  {
+    id: 1,
+    path: "/",
+    isActive: false,
+    text: "Home",
+  },
+  {
+    id: 2,
+    path: "/puja",
+    isActive: false,
+    text: "Puja",
+  },
+
+  {
+    id: 3,
+    path: "/panchang",
+    isActive: false,
+    text: "Panchang",
+  },
+  {
+    id: 4,
+    path: "/template",
+    isActive: false,
+    text: "Template",
+  },
+  {
+    id: 5,
+    path: "/library",
+    isActive: false,
+    text: "Library",
+  },
+];
 
 const Header = () => {
-  const [linkActive, setLinkActive] = useState(false)
-  const onclickLink = () => {
-    setLinkActive(true)
-  }
-  const classname = linkActive ? 'active' : 'link'
+  const [listItems, setlistItems] = useState(headerElements);
+  const onclickLink = (id) => {
+    setlistItems((prevState) =>
+      listItems.map((item) => {
+        if (item.id === id) {
+          [...item.isActive, !isActive];
+        }
+        return item;
+      })
+    );
+  };
+
   return (
     <div className="nav-container">
       <div className="header-img-container">
@@ -19,15 +60,16 @@ const Header = () => {
         />
       </div>
       <div className="header-elements-container">
-        <Link className={classname} to="/" onClick={onclickLink}>
-          Home
-        </Link>
-        <Link className={classname} to="/puja">
-          Puja
-        </Link>
-        <Link className={classname}>Panchang</Link>
-        <Link className={classname}>Template</Link>
-        <Link className={classname}>Library</Link>
+        {headerElements.map((item) => (
+          <PathLink
+            isactive={isActive}
+            to={item.path}
+            onClick={onclickLink}
+            key={item.id}
+          >
+            {item.text}
+          </PathLink>
+        ))}
       </div>
       <div className="language-contaienr">
         <select className="select-options">
@@ -37,7 +79,7 @@ const Header = () => {
         <CgProfile className="profile" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
