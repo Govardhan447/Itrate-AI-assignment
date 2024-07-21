@@ -6,6 +6,15 @@
   justify-content: space-between;
   align-items: center;
 }
+.header-elements-container {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
 .link {
   font-size: 20px;
   font-family: sans-serif;
