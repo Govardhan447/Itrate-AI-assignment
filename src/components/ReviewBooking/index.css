@@ -5,16 +5,17 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 30px;
 }
 
 .navigate-bar {
-  width: 100%;
-  height: 100px;
+  width: 90%;
+  height: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border: 2px solid #e2dede;
+  border-top: 2px solid #e2dede;
   padding: 20px;
   font-family: sans-serif;
 }
@@ -30,13 +31,14 @@
   font-family: sans-serif;
 }
 .amount-details-other-details-container {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   padding: 0px;
+  margin: 0px;
 }
 
 .amount-details-container {
@@ -74,22 +76,33 @@
   font-family: sans-serif;
 }
 
+.caption {
+  color: #21fd6e;
+  font-weight: 600;
+  font-size: 25px;
+}
+
 .rupees {
   font-size: 12px;
   font-family: sans-serif;
 }
 
+.right-arrow {
+  color: #21fd6e;
+  font-weight: 600;
+  font-size: 25px;
+}
 .apply-caption {
   width: 100%;
-  height: 30px;
+  height: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid #e2dede;
+  border: 2px solid #eeebeb;
   border-radius: 10px;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -103,14 +116,15 @@
   color: #ffffff;
   font-size: 20px;
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   margin: 0px;
   border-radius: 7px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
 }
 
@@ -122,4 +136,5 @@
   align-items: center;
   height: 100%;
   font-size: 20px;
+  margin: 0px;
 }

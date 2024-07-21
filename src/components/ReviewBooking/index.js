@@ -1,14 +1,14 @@
-import './index.css'
-import {FaArrowRightLong} from 'react-icons/fa6'
-import {FaArrowLeftLong} from 'react-icons/fa6'
-import {FaAngleDown} from 'react-icons/fa'
-import {Link} from 'react-router-dom'
+import "./index.css";
+import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaAngleRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ReviewBooking = () => {
   return (
     <div className="review-booking-bg-container">
       <div className="navigate-bar">
-        <FaArrowLeftLong className='left-arrow'/>
+        <FaArrowLeftLong className="left-arrow" />
         <h1 className="navigate-heading">Review Booking</h1>
       </div>
       <div className="amount-details-other-details-container">
@@ -21,8 +21,8 @@ const ReviewBooking = () => {
             <p className="rupees">Rs.2001 /-</p>
           </div>
           <div className="apply-caption">
-            <p>Apply Caption</p>
-            <FaAngleDown className="down arrow" />
+            <p className="capiton">Apply Caption</p>
+            <FaAngleRight className="right-arrow" />
           </div>
           <h1 className="amount-heading">Bill Details</h1>
           <div className="apply-caption">
@@ -46,7 +46,7 @@ const ReviewBooking = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ReviewBooking
+export default ReviewBooking;
